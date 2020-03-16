@@ -17,11 +17,19 @@
     &-box{
       height: 20px;
       width: 260px;
-      background-color: #ffffff;
+      background-color: #253141;
       display: flex;
       justify-content: space-between;
+      &--name {
+      color: #ffffff;
+      }
       &--icon {
       width: 60px;
+      text-align: right;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
       }
     }
   }
