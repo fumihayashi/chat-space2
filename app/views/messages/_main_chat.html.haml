@@ -21,5 +21,8 @@
       いいいいい
   .form
     .form__new-message
-      .input-box
-      
+      .imput-box type a message
+      %label.image-icon
+        = icon('fas', 'image')
+        %input{class: "input-box__image",type: "file"}
+    .send-button Send

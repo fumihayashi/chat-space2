@@ -106,12 +106,40 @@
    }
   }
   .form{
-  background-color: #d2d2d2;
-  height: 90px;
-  padding: 20px 40px;
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 40px;
+    display: flex;
     &__new-message{
+      position: relative;
+      display: flex;
       height: 50px;
+      width: 100%;
       background-color: #ffffff;
+      .imput-box {
+        height: 50px;
+        width: 100%;
+        color:#434A54;
+        line-height: 50px;
+        margin-left: 10px;
+        }
+        .image-icon {
+          position: absolute;
+          top: 13px;
+          right: 10px;
+        }
+        .input-box__image {
+          display: none
+        }
+      }
     }
+  .send-button {
+    background-color: #38aef0;
+    height: 50px;
+    width: 100px;
+    margin-left: 15px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
   }
 }
