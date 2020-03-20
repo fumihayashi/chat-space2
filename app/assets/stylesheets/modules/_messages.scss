@@ -105,8 +105,13 @@
      padding-bottom: 46px;
    }
   }
-  &__form{
+  .form{
   background-color: #d2d2d2;
   height: 90px;
+  padding: 20px 40px;
+    &__new-message{
+      height: 50px;
+      background-color: #ffffff;
+    }
   }
 }
