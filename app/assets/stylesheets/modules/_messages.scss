@@ -48,7 +48,7 @@
         font-size: 11px;
       }
     }
-}
+  }
 }
 .chat-main {
   width: calc(100vw - 300px);
@@ -121,7 +121,7 @@
         width: 100%;
         color:$message-color;
         line-height: 50px;
-        margin-left: 10px;
+        padding-left: 10px;
         }
         .image-icon {
           position: absolute;
