@@ -117,6 +117,7 @@
       width: 100%;
       background-color: $side_bar-color;
       .imput-box {
+        position: absolute;
         height: 50px;
         width: 100%;
         color:$message-color;
@@ -127,9 +128,9 @@
           position: absolute;
           top: 13px;
           right: 10px;
-        }
-        .input-box__image {
+          .input-box__image {
           display: none
+         }
         }
       }
     }
