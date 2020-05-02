@@ -4,14 +4,22 @@
       .side-bar__top-box--name
         = current_user.name
       .side-bar__top-box--icon
-        = link_to do
+        = link_to new_group_path do
           = icon('fas', 'edit')
-        = link_to edit_user_path(current_user) do
+        = link_to edit_user_path(current_user.id) do
           = icon('fas', 'cog')
   .side-bar__groups
-    .side-bar__groups--group
-      .side-bar__groups--group-name グループ名
-      .side-bar__groups--group-message 2作ってますっていうメッセージ
-    .side-bar__groups--group
-      .side-bar__groups--group-name グループ名2
-      .side-bar__groups--group-message 2作ってますっていうメッセージ2
+    -# .side-bar__groups--group
+    -#   .side-bar__groups--group-name グループ名
+    -#   .side-bar__groups--group-message 2作ってますっていうメッセージ
+    -# .side-bar__groups--group
+    -#   .side-bar__groups--group-name グループ名2
+    -#   .side-bar__groups--group-message 2作ってますっていうメッセージ2
+
+    - current_user.groups.each do |group|
+      .side-bar__groups--group
+        = link_to '#' do
+          .side-bar__groups--group-name
+            = group.name
+          .side-bar__groups--group-message
+            メッセージはまだありません。
