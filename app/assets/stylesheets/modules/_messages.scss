@@ -86,11 +86,12 @@ a{
      text-align: center
    }
   }
-  &__messages {
+  .messages {
     height: calc(100vh - 100px - 90px);
     margin-left: 40px;
     padding-top: 35px;
-    &--info {
+    overflow: scroll;
+    .chat-main__messages--info {
       display: flex;
       padding-bottom: 12px;
       &-group-name {
@@ -103,7 +104,7 @@ a{
         font-size: 12px;
       }
     }
-   &--date-message {
+   .chat-main__messages--date-message {
      color: $message-color;
      font-size: 14px;
      padding-bottom: 46px;
@@ -114,37 +115,41 @@ a{
     height: 90px;
     padding: 20px 40px;
     display: flex;
+    .new_message {
+      display: flex;
+    }
     &__new-message{
       position: relative;
       display: flex;
       height: 50px;
-      width: 100%;
+      width: 900px;
       background-color: $side_bar-color;
       .imput-box {
         position: absolute;
         height: 50px;
-        width: 100%;
+        width: 900px;
         color:$message-color;
         line-height: 50px;
         padding-left: 10px;
-        }
-        .image-icon {
-          position: absolute;
-          top: 13px;
-          right: 10px;
-          .input-box__image {
-          display: none
-         }
+      }
+      .image-icon {
+        position: absolute;
+        top: 13px;
+        right: 10px;
+        .input-box__image {
+        display: none
         }
       }
     }
-  .send-button {
-    background-color: $btn-color;
-    height: 50px;
-    width: 100px;
-    margin-left: 15px;
-    color: $side_bar-color;
-    text-align: center;
-    line-height: 50px;
+
+    .send-button {
+      background-color: $btn-color;
+      height: 50px;
+      width: 100px;
+      margin-left: 15px;
+      color: $side_bar-color;
+      text-align: center;
+      line-height: 50px;
+    }
   }
 }
