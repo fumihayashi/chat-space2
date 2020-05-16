@@ -38,7 +38,6 @@ $(function(){
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
     })
     .always(function(){
-      // $('.send-button').prop('disabled', false);
       $(".send-button").removeAttr("disabled");
     })
     .fail(function() {
