@@ -3,7 +3,7 @@
     .chat-main__messages--info-group-name
       = message.user.name
     .chat-main__messages--info-date
-      = message.created_at.strftime("%Y/%m/%d %H:%M")
+      = message.created_at.to_s(:datetime)
   - if message.content.present?
     %p.chat-main__messages--date-message
       = message.content
