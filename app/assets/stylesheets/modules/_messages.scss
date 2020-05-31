@@ -132,6 +132,7 @@ a{
         color:$message-color;
         line-height: 50px;
         padding-left: 10px;
+        border: none;
       }
       .image-icon {
         position: absolute;
@@ -151,6 +152,7 @@ a{
       color: $side_bar-color;
       text-align: center;
       line-height: 50px;
+      border: none;
     }
   }
 }
